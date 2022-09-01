@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Day-1-Assignment-1</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+$(document).ready(function(){
+    // To get the value on button click 
+    // and display inside the div element
+    $("#ShowEmail").click(function(){
+        var valueofInputTextBox = $("#EnteredText").val();
+        $("#MyDiv").text(valueofInputTextBox);
+    });
+});
+</script>
+</head>
+<body>
+	<h1>Jquery Show Email on button click</h1>
+    <input type="text" id="EnteredText">
+    <br>
+    <div id="MyDiv"></div>
+    <br>
+    <button type="button" id="ShowEmail">Show Email</button>
+</body>
+</html>
